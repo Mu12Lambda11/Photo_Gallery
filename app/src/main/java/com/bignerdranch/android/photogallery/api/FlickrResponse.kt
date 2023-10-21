@@ -1,4 +1,8 @@
 package com.bignerdranch.android.photogallery.api
 
-class FlickrResponse {
-}
+import com.squareup.moshi.JsonClass
+
+    @JsonClass(generateAdapter = true)
+    data class FlickrResponse(
+        val photos: PhotoResponse
+    )
